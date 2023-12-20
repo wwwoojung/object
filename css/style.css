@@ -1,0 +1,90 @@
+#Header .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#Header .header_top .util {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+#Header .header_top .util>ul {
+    display: flex;
+    gap: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+#Header .header_top .util .material-symbols-outlined {
+    font-size: 24px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 40
+}
+
+#Header .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+
+.main_visual {
+    height: calc(100vh - 148px);
+}
+
+.main_visual .main_visual_slide .itm {
+    height: 600px;
+}
+
+.main_visual .main_visual_slide .itm01 {
+    background: url(../images/231219_mainbanner_slide_01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm02 {
+    background: url(../images/231219_mainbanner_slide_02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm03 {
+    background: url(../images/231219_mainbanner_slide_03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm04 {
+    background: url(../images/231219_mainbanner_slide_04.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm05 {
+    background: url(../images/231219_mainbanner_slide_05.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm06 {
+    background: url(../images/231219_mainbanner_slide_06.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm07 {
+    background: url(../images/231219_mainbanner_slide_07.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm08 {
+    background: url(../images/231219_mainbanner_slide_08.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm09 {
+    background: url(../images/231219_mainbanner_slide_09.jpg) no-repeat center center;
+}

@@ -1,0 +1,49 @@
+.inner {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 100px 0;
+}
+
+.default .title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+
+    text-align: left;
+}
+
+.default .title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 36px;
+}
+
+.default .title p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.more_btn {
+    padding: 16px 48px;
+
+    border: none;
+    background: #fff;
+
+    border: 1px solid #202123;
+
+    font-size: 14px;
+    color: #202123;
+
+    cursor: pointer;
+}
+
+.more_btn:hover {
+    background: #202123;
+    color: #fff;
+}
