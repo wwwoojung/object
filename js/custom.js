@@ -46,7 +46,7 @@ const MAIN_BANNER_SLIDE = new Swiper('.main_banner_slide', {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-        rotate: 40,
+        rotate: 80,
         stretch: 0,
         depth: 100,
         modifier: 1,
@@ -66,6 +66,31 @@ const MAIN_BANNER_SLIDE = new Swiper('.main_banner_slide', {
             BANNER_SLIDE_ITMS[this.realIndex].classList.add('on');
         }
     }
-})
+});
 
 AOS.init();
+
+const BANNER_SLIDE_LEFT = document.querySelector('.main_banner .banner_slide_arrows .left');
+const BANNER_SLIDE_RIGHT = document.querySelector('.main_banner .banner_slide_arrows .right');
+
+BANNER_SLIDE_LEFT.addEventListener('click', () => {
+    MAIN_BANNER_SLIDE.slidePrev();
+})
+
+BANNER_SLIDE_RIGHT.addEventListener('click', () => {
+    MAIN_BANNER_SLIDE.slideNext();
+})
+
+const MAIN_BEST_TAB_M = document.querySelectorAll('.main_best_seller .tab_menu li');
+const MAIN_BEST_TAB_C = document.querySelectorAll('.main_best_seller .tab_content .con_box');
+
+MAIN_BEST_TAB_M.forEach((it, idx) => {
+    it.addEventListener('click', (e) => {
+        e.preventDefault();
+        MAIN_BEST_TAB_M.forEach(it => it.classList.remove('on'));
+        MAIN_BEST_TAB_C.forEach(it => it.classList.remove('on'));
+
+        MAIN_BEST_TAB_M[idx].classList.add('on');
+        MAIN_BEST_TAB_C[idx].classList.add('on');
+    });
+});
