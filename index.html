@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/custom.js" defer></script>
 
 </head>
@@ -22,47 +24,49 @@
 <body>
     <div class="wrap">
         <header id="Header" class="Header">
-            <div class="inner header_wrap">
-                <div class="header_top">
-                    <h1>
-                        <a href="">
-                            <img src="./images/top_logo.png" alt="">
-                        </a>
-                    </h1>
-                    <div class="util">
-                        <ul>
-                            <li><a href="">LOGIN</a></li>
-                            <li><a href="">MYPAGE</a></li>
-                            <li><a href="">ORDER</a></li>
-                            <li><a href="">CART</a></li>
-                            <li><a href="">STORE</a></li>
-                        </ul>
-                        <div class="search">
-                            <span class="material-symbols-outlined">
-                                search
-                            </span>
+            <div class="header_wrap">
+                <div class="inner">
+                    <div class="header_top">
+                        <h1>
+                            <a href="">
+                                <img src="./images/top_logo.png" alt="">
+                            </a>
+                        </h1>
+                        <div class="util">
+                            <ul>
+                                <li><a href="">LOGIN</a></li>
+                                <li><a href="">MYPAGE</a></li>
+                                <li><a href="">ORDER</a></li>
+                                <li><a href="">CART</a></li>
+                                <li><a href="">STORE</a></li>
+                            </ul>
+                            <div class="search">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="">NEW</a></li>
+                            <li><a href="">BEST</a></li>
+                            <li><a href="">STYLE</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">STATIONERY</a></li>
+                            <li><a href="">BOOKS</a></li>
+                            <li><a href="">RECYCLE</a></li>
+                            <li><a href="">EXHIBITION</a></li>
+                            <li><a href="">object</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="">NEW</a></li>
-                        <li><a href="">BEST</a></li>
-                        <li><a href="">STYLE</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">STATIONERY</a></li>
-                        <li><a href="">BOOKS</a></li>
-                        <li><a href="">RECYCLE</a></li>
-                        <li><a href="">EXHIBITION</a></li>
-                        <li><a href="">object</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <main id="container" class="main">
             <section class="main_visual">
+                <h2 class="blind">main content</h2>
                 <div class="inner">
-                    <h2 class="blind">main content</h2>
                     <div class="swiper main_visual_slide">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide itm">
@@ -149,13 +153,25 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
+                <div class="visual_slide_arrows">
+                    <div class="left" role="button">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                    </div>
+                    <div class="right" role="button">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
+                </div>
             </section>
             <section class="main_exhibition default">
                 <div class="title">
-                    <h2>EXHIBITION</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">EXHIBITION</h2>
                 </div>
                 <div class="inner exhibition_con">
-                    <a href="">
+                    <a href="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
                         <div class="content">
                             <div class="img_box">
                                 <img src="./images/main_exhibition01.jpg" alt="">
@@ -167,7 +183,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                         <div class="content">
                             <div class="img_box">
                                 <img src="./images/main_exhibition02.jpg" alt="">
@@ -179,7 +195,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
                         <div class="content">
                             <div class="img_box">
                                 <img src="./images/main_exhibition03.jpg" alt="">
@@ -194,13 +210,14 @@
                 </div>
             </section>
             <section class="main_new default">
-                <div class="title">
+                <div class="title" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1200">
                     <h2>NEW ARRIVAL</h2>
                     <p>오브젝트에 새롭게 들어온 제품을 소개합니다.</p>
                 </div>
                 <div class="inner new_con">
                     <div class="grid_container">
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="400" data-aos-delay="200"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new01.jpg" alt="">
                             </div>
@@ -209,7 +226,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="400" data-aos-delay="200"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new02.png" alt="">
                             </div>
@@ -218,7 +236,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="400" data-aos-delay="200"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new03.png" alt="">
                             </div>
@@ -227,7 +246,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="400" data-aos-delay="200"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new04.png" alt="">
                             </div>
@@ -236,7 +256,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new05.jpg" alt="">
                             </div>
@@ -245,7 +266,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new06.png" alt="">
                             </div>
@@ -254,7 +276,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new07.png" alt="">
                             </div>
@@ -263,7 +286,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new08.png" alt="">
                             </div>
@@ -272,7 +296,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new09.png" alt="">
                             </div>
@@ -281,7 +306,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new10.png" alt="">
                             </div>
@@ -290,7 +316,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new11.jpg" alt="">
                             </div>
@@ -299,7 +326,8 @@
                                 <strong>13,000원</strong>
                             </div>
                         </div>
-                        <div class="grid_itm">
+                        <div class="grid_itm" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300"
+                            data-aos-duration="1200">
                             <div class="img_box">
                                 <img src="./images/main_new12.jpg" alt="">
                             </div>
@@ -317,11 +345,37 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide itm">
                             <div class="img_box">
+                                <img src="./images/main_banner_01.png" alt="">
                             </div>
-                            <div class="txt_box"></div>
+                            <div class="txt_box">
+                                <span>PRODUCT</span>
+                                <strong>최고심 춤추는 고심이</strong>
+                                <p>말하는 고심이와 함께 리듬에 맡겨봐!</p>
+                                <button class="more_btn">more</button>
+                            </div>
                         </div>
-                        <div class="swiper-slide itm"></div>
-                        <div class="swiper-slide itm"></div>
+                        <div class="swiper-slide itm">
+                            <div class="img_box">
+                                <img src="./images/main_banner_02.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <span>PRODUCT</span>
+                                <strong>최고심 춤추는 고심이</strong>
+                                <p>말하는 고심이와 함께 리듬에 맡겨봐!</p>
+                                <button class="more_btn">more</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="img_box">
+                                <img src="./images/main_banner_03.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <span>PRODUCT</span>
+                                <strong>최고심 춤추는 고심이</strong>
+                                <p>말하는 고심이와 함께 리듬에 맡겨봐!</p>
+                                <button class="more_btn">more</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
