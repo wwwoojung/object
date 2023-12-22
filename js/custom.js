@@ -52,6 +52,10 @@ const MAIN_BANNER_SLIDE = new Swiper('.main_banner_slide', {
         modifier: 1,
         slideShadows: true,
     },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
 
     slideActiveClass: 'on',
 
@@ -94,3 +98,20 @@ MAIN_BEST_TAB_M.forEach((it, idx) => {
         MAIN_BEST_TAB_C[idx].classList.add('on');
     });
 });
+
+const TO_TOP = document.querySelector('.totop');
+TO_TOP.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
+});
+
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 1) {
+        TO_TOP.classList.add('on')
+    } else {
+        TO_TOP.classList.remove('on')
+    }
+})
